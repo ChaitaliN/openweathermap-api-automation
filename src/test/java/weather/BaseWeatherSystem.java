@@ -17,8 +17,6 @@ public class BaseWeatherSystem {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        System.out.println(prop.getProperty("api"));
         RestAssured.baseURI = prop.getProperty("api");
     }
 
